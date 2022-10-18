@@ -1,0 +1,38 @@
+.choice-main-container {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.choice-item-container {
+	width: 50%;
+	z-index: 1;
+}
+
+.triangle {
+	position: absolute;
+	z-index: 0;
+}
+
+@media only screen and (max-width: 375px) {
+	.choice-main-container {
+		height: 48vh;
+		max-width: 21rem;
+	}
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1366px) {
+	.choice-main-container {
+		height: 52vh;
+		max-width: 29rem;
+	}
+}
+
+@media only screen and (min-width: 1367px) {
+	.choice-main-container {
+		height: 56vh;
+		max-width: 35rem;
+	}
+}

@@ -1,0 +1,40 @@
+.rules-container {
+	width: fit-content;
+}
+
+.rules-btn {
+	border: 0.2rem solid rgba(250, 250, 250, 0.8);
+	border-radius: 0.5rem;
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	font-family: var(--primary-font);
+	transition: border-width 0.6s linear;
+}
+
+.rules-btn:active {
+	border: 0.4rem;
+}
+
+@media only screen and (max-width: 375px) {
+	.rules-container {
+		margin: 8.5rem auto;
+	}
+
+	.rules-btn {
+		width: 7rem;
+		height: 2.3rem;
+	}
+}
+
+@media only screen and (min-width: 376px) {
+	.rules-container {
+		position: absolute;
+		right: 2rem;
+		bottom: 2rem;
+	}
+
+	.rules-btn {
+		width: 10rem;
+		height: 3rem;
+	}
+}

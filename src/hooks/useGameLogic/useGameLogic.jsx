@@ -24,12 +24,14 @@ const useGameLogic = () => {
 
 	// saves cookie so points will be stored even tough browser is refreshed
 	useEffect(() => {
+		console.log('Points updated');
 		setCookie('rps-points', points);
 	}, [points]);
 
 	// when app starts get saved points
 	useEffect(() => {
-		setPoints(parseInt(cookies['rps-points']));
+		if (!isNaN(cookies['rps-points']))
+			setPoints(parseInt(cookies['rps-points']));
 	}, []);
 
 	// When play again btn is pressed it removes the choice so the state can be updated next match

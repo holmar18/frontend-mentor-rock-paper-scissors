@@ -21,6 +21,29 @@
 <br>
 <img src="./design/my-solution/my-solution-rpb-mobile-win-3.png"/>
 
+---
+
+### Screenshots of Frontend mentor's original solution
+
+#### Desktop version
+
+<img src="./design/original/desktop-step-1.jpg" />
+<br>
+<img src="./design/original/desktop-rules-modal.jpg"/>
+<br>
+<img src="./design/original/desktop-step-4-win.jpg"/>
+<br><br>
+
+#### Mobiel version
+
+<img src="./design/original/mobile-step-1.jpg" />
+<br>
+<img src="./design/original/mobile-rules-modal.jpg"/>
+<br>
+<img src="./design/original/mobile-step-4-win.jpg"/>
+
+---
+
 #### What could be changed ?
 
 - Use context instead of <b>prop-drilling</b>.

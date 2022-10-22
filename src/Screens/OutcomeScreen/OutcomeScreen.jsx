@@ -48,7 +48,10 @@ const OutcomeScreen = ({ myChoice, setPoints, playagain }) => {
 					</div>
 				</div>
 			)}
-			<div className='outcome-ai-choice'>
+			<div
+				className='outcome-ai-choice'
+				style={!ai ? { marginLeft: 'auto' } : null}
+			>
 				{ai ? (
 					<RockPaperScissor
 						src={ai.svg}

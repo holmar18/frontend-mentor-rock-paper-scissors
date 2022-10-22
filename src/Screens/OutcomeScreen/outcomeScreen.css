@@ -5,7 +5,7 @@
 }
 
 .outcome-ai-choice {
-	margin-left: auto;
+	width: fit-content;
 }
 
 .outcome-text {
@@ -18,8 +18,13 @@
 }
 
 .outcome-dark-circle {
+	margin-left: auto;
 	border-radius: 50%;
 	background: var(--background-gradient-to);
+}
+
+.outcome-dark-circle-container {
+	width: 100%;
 }
 
 .playagain-container {
@@ -34,8 +39,8 @@
 }
 
 .playagain-btn-container button {
-	width: 10rem;
-	height: 2.3rem;
+	width: 12rem;
+	height: 2.7rem;
 	border-radius: 0.5rem;
 	border: 0;
 	margin-top: 0.6rem;

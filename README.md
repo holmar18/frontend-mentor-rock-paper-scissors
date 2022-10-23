@@ -1,6 +1,15 @@
 # Frontend Mentor - Rock, Paper & Scissor game
 
-[Link to project Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH)
+---
+
+### Links
+
+#####[Link to project Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH)
+
+<!-- prettier-ignore -->
+#####[Link to my solution](https://holmar-rock-paper-scissor.netlify.app/)
+
+---
 
 ### Screenshots of my solution
 

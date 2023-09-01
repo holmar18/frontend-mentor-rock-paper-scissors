@@ -48,22 +48,32 @@ const useAiLogic = (setPoints, myChoice) => {
 
 	// Evaluates if the game is won/lost or draw
 	const EvalVictory = () => {
-		if (
-			(myChoice === 'paper' && ai.pc === 'rock') ||
-			(myChoice === 'rock' && ai.pc === 'scissor') ||
-			(myChoice === 'scissor' && ai.pc === 'paper')
-		) {
-			setPoints((points) => points + 1);
-			setWinLoss('YOU WIN');
-		} else if (
-			(myChoice === 'paper' && ai.pc === 'scissor') ||
-			(myChoice === 'scissor' && ai.pc === 'rock') ||
-			(myChoice === 'paper' && ai.pc === 'scissor')
-		) {
-			setPoints((points) => points - 1);
-			return setWinLoss('YOU LOSE');
+		if (myChoice == 'rock') {
+			if (ai.pc == 'paper') {
+				setPoints((points) => points - 1);
+				setWinLoss('YOU LOSE');
+			} else {
+				setPoints((points) => points + 1);
+				setWinLoss('YOU WIN');
+			}
+		} else if (myChoice == 'scissor') {
+			if (ai.pc == 'rock') {
+				setPoints((points) => points - 1);
+				setWinLoss('YOU LOSE');
+			} else {
+				setPoints((points) => points + 1);
+				setWinLoss('YOU WIN');
+			}
+		} else if (myChoice == 'paper') {
+			if (ai.pc == 'scissor') {
+				setPoints((points) => points - 1);
+				setWinLoss('YOU LOSE');
+			} else {
+				setPoints((points) => points + 1);
+				setWinLoss('YOU WIN');
+			}
 		} else {
-			return setWinLoss('DRAW');
+			setWinLoss('DRAW');
 		}
 	};
 
